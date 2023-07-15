@@ -6,24 +6,54 @@
             "surname": "Williams",
             "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img3.jpg?raw=true",
             "balance": 2000
-        }
-    ]
-    [
+        },
         {
             "id": 2,
             "name": "Noah",
             "surname": "Collins",
             "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img2.jpg?raw=true",
             "balance": 1500
-        }
-    ]
-    [
+        },
         {
             "id": 3,
             "name": "Melanie",
             "surname": "Evans",
             "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img1.jpg?raw=true",
             "balance": 1500
+        }
+    ],
+    "products" : [
+        {
+            "id": 1,
+            "name": "peaches",
+            "price": "60",
+            "description": "",
+            "author_id": 1,
+            "img": ""
+        },
+        {
+            "id": 2,
+            "name": "carrots",
+            "price": "80",
+            "description": "",
+            "author_id": 2,
+            "img": ""
+        },
+        {
+            "id": 3,
+            "name": "potatoes",
+            "price": "70",
+            "description": "",
+            "author_id": 3,
+            "img": ""
+        },
+        {
+            "id": 4,
+            "name": "apples",
+            "price": "50",
+            "description": "",
+            "author_id": 4,
+            "img": ""
         }
     ]
 }
