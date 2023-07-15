@@ -4,8 +4,8 @@
             "id": 1, 
             "name": "Albert",
             "surname": "Williams",
-            "img": "",
-            "balance": ""
+            "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img3.jpg?raw=true",
+            "balance": 2000
         }
     ]
     [
@@ -13,8 +13,8 @@
             "id": 2,
             "name": "Noah",
             "surname": "Collins",
-            "img": "",
-            "balance":
+            "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img2.jpg?raw=true",
+            "balance": 1500
         }
     ]
     [
@@ -22,8 +22,8 @@
             "id": 3,
             "name": "Melanie",
             "surname": "Evans",
-            "img": "",
-            "balance"
+            "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img1.jpg?raw=true",
+            "balance": 1500
         }
     ]
 }
