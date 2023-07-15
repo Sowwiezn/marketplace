@@ -1,7 +1,29 @@
 {
     "users" : [
         {
-            
+            "id": 1, 
+            "name": "Albert",
+            "surname": "Williams",
+            "img": "",
+            "balance": ""
+        }
+    ]
+    [
+        {
+            "id": 2,
+            "name": "Noah",
+            "surname": "Collins",
+            "img": "",
+            "balance":
+        }
+    ]
+    [
+        {
+            "id": 3,
+            "name": "Melanie",
+            "surname": "Evans",
+            "img": "",
+            "balance"
         }
     ]
 }
