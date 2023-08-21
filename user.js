@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 
-let userA = document.getElementById('user-pr')
+let profile = document.getElementById('profile')
 // let userProduct = document.getElementById('userProduct')
 
 let xhrU =  new XMLHttpRequest()
@@ -13,7 +13,11 @@ xhrU.onload = function(){
     let account = xhrU.response
         // let aElem = document.createElement('div')
         // aElem.classList.add('profile')
+        profile.innerHTML = `
+            <h1>${account.name}</h1>
+        `
         // aElem.innerHTML = `
+        // <h1>${account.name}</h1>
         // <img src="${account.img}" class="imgP" alt="${account.name}">
         // <h3 class="nameSurn">${account.surname}</h3>
         // <p class="balanceP">${account.balance}</p>
