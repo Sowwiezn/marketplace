@@ -7,7 +7,8 @@ let userA = document.getElementById('user-pr')
 let xhr =  new XMLHttpRequest()
 let urlA = 'https://my-json-server.typicode.com/Sowwiezn/marketplace'
 
-xhr.open('GET', `${urlA}/users/${id}`)
+// xhr.open('GET', `${urlA}/users/${id}`)
+xhr.open('GET', `${urlA}/users/id`)
 xhr.responseType = 'json'
 xhr.onload = function(){
     let account = xhr.response
