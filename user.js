@@ -4,24 +4,23 @@ const id = urlParams.get('id');
 let userA = document.getElementById('user-pr')
 // let userProduct = document.getElementById('userProduct')
 
-let xhr =  new XMLHttpRequest()
+let xhrU =  new XMLHttpRequest()
 let urlA = 'https://my-json-server.typicode.com/Sowwiezn/marketplace'
 
-// xhr.open('GET', `${urlA}/users/${id}`)
-xhr.open('GET', `${urlA}/users/id`)
-xhr.responseType = 'json'
-xhr.onload = function(){
-    let account = xhr.response
-    //     let aElem = document.createElement('div')
-    //     aElem.classList.add('profile')
-    //     aElem.innerHTML = `
-    //     <img src="${aElem.img}" class="imgP" alt="${aElem.name}">
-    //     <h3 class="nameSurn">${aElem.name} ${aElem.surname}</h3>
-    //     <p class="balanceP">${aElem.balance}</p>
-    //     `
-    console.log(account)
+xhrU.open('GET', `${urlA}/users/${id}`)
+xhrU.responseType = 'json'
+xhrU.onload = function(){
+    let account = xhrU.response
+        // let aElem = document.createElement('div')
+        // aElem.classList.add('profile')
+        // aElem.innerHTML = `
+        // <img src="${account.img}" class="imgP" alt="${account.name}">
+        // <h3 class="nameSurn">${account.surname}</h3>
+        // <p class="balanceP">${account.balance}</p>
+        // `
+        console.log(account)
         }
-xhr.send()
+xhrU.send()
 
 // let xhrP = new XMLHttpRequest
 // let urlP = 'https://my-json-server.typicode.com/Sowwiezn/marketplace'
