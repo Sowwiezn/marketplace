@@ -11,17 +11,12 @@ xhrU.open('GET', `${urlA}/users/${id}`)
 xhrU.responseType = 'json'
 xhrU.onload = function(){
     let account = xhrU.response
-        // let aElem = document.createElement('div')
-        // aElem.classList.add('profile')
         profile.innerHTML = `
             <h1>${account.name}</h1>
+            <img src="${account.img}" class="imgP" alt="${account.name}">
+            <h3 class="nameSurn">${account.surname}</h3>
+            <p class="balanceP">${account.balance}</p>
         `
-        // aElem.innerHTML = `
-        // <h1>${account.name}</h1>
-        // <img src="${account.img}" class="imgP" alt="${account.name}">
-        // <h3 class="nameSurn">${account.surname}</h3>
-        // <p class="balanceP">${account.balance}</p>
-        // `
         console.log(account)
         }
 xhrU.send()
