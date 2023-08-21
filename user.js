@@ -21,6 +21,7 @@ xhrU.onload = function(){
         }
 xhrU.send()
 
+
 // let xhrP = new XMLHttpRequest
 // let urlP = 'https://my-json-server.typicode.com/Sowwiezn/marketplace'
 // let arrayP = []
