@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 
 let profile = document.getElementById('profile')
-// let userProduct = document.getElementById('userProduct')
+
 
 let xhrU =  new XMLHttpRequest()
 let urlA = 'https://my-json-server.typicode.com/Sowwiezn/marketplace'
@@ -12,36 +12,32 @@ xhrU.responseType = 'json'
 xhrU.onload = function(){
     let account = xhrU.response
         profile.innerHTML = `
-            <h1>${account.name}</h1>
-            <img src="${account.img}" class="imgP" alt="${account.name}">
-            <h3 class="nameSurn">${account.surname}</h3>
-            <p class="balanceP">${account.balance}</p>
+
+            <img src="${account.img}" id="imgP" alt="${account.name}">
+            <h2 id="name" >${account.name} ${account.surname}</h2>
+            <p id="balanceP"><b>Balance: ${account.balance}</b></p>
         `
-        console.log(account)
+        
         }
 xhrU.send()
 
-// let xhrP = new XMLHttpRequest
-// let urlP = 'https://my-json-server.typicode.com/Sowwiezn/marketplace'
-// let arrayP = []
+let products = document.getElementById('products')
+let xhrP = new XMLHttpRequest()
+let urlP = 'https://my-json-server.typicode.com/Sowwiezn/marketplace'
 
-// xhrP.open('GET', urlP +'/product')
-// xhrP.responseType = 'json'
-// xhrP.onload = function(){
-//     let product = xhrP.response
-//     userProduct.innerHTML = null
-//     product.forEach(p => {
-//         arrayP.push(p)
-//         let pElem = document.createElement('div')
-//         pElem.classList.add('products')
-//         pElem.innerHTML = `
-//         <h2 class="product-name">${p.name}</h2>
-//         <img src="${p.img}" class="product-img" alt="${p.name}">
-//         <p class="product-price"><b>Price: </b>${p.price}</p>
-//         <p class="product-description"><b>Description: </b>${p.description}</p>
-//         `       
-//     userProduct.append(aElem)
-//     });
-//     console.log(account)
-// }
-// xhrP.send()
+xhrP.open('GET',`${urlP}/products?author_id=${id}`)
+xhrP.responseType = 'json'
+xhrP.onload = function(){
+    let product = xhrP.response
+    products.innerHTML = null
+    product.forEach(p => {
+        products.innerHTML += `
+        <h2 id="product-name">${p.name}</h2>
+        <img src="${p.img}" id="product-img" alt="${p.name}">
+        <p id="product-price"><b>Price: </b>${p.price}</p>
+        <p id="product-description"><b>Description: </b>${p.description}</p>
+        `       
+    });
+    console.log(product)
+}
+xhrP.send()
