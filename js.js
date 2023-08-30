@@ -38,11 +38,11 @@ function addProductToCart(id){
   })
   cart.push(product)
   drawCartProducts()
-  localStorage.setItem("cart", JSON.stringify(cart))
-  document.getElementById("cart-bttn").classList.add("active")
-  setTimeout(function(){
-    document.getElementById("cart-bttn").classList.remove("active")
-  }, 500)
+  // localStorage.setItem("cart", JSON.stringify(cart))
+  // document.getElementById("cart-bttn").classList.add("active")
+  // setTimeout(function(){
+  //   document.getElementById("cart-bttn").classList.remove("active")
+  // }, 500)
 }
 
 function drawCartProducts(){
