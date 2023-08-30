@@ -1,4 +1,5 @@
 let gridProduct = document.getElementById("grid-products")
+let cartProduct = document.getElementById("cart-products")
 let array = []
 let xhr = new XMLHttpRequest()
 let url = 'https://my-json-server.typicode.com/Sowwiezn/marketplace'
@@ -24,3 +25,13 @@ xhr.onload = function(){
     });
 }
 xhr.send()
+
+let cart = [];
+if(localStorage.getItem('cart')) {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    drawCartProducts();
+}
+
+function cartOpen(){
+  cartProduct.classList.toggle('hide')
+}
