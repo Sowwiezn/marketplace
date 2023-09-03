@@ -65,3 +65,10 @@ function drawCartProducts(){
 function cartOpen(){
   cartProduct.classList.toggle('hide')
 }
+function buyAll(){
+  cart = []
+  cartProduct.innerHTML = `
+      <p id="text">Деньги будут списаны с карты.</p>
+  `
+  localStorage.setItem("cart", '[]')
+}
