@@ -26,7 +26,7 @@
         {
             "id": 1,
             "name": "peaches",
-            "price": "60",
+            "price": 60,
             "description": "tasty",
             "author_id": 1,
             "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img5.jpg?raw=true"
@@ -34,7 +34,7 @@
         {
             "id": 2,
             "name": "carrots",
-            "price": "80",
+            "price": 80,
             "description": "tasty",
             "author_id": 2,
             "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img6.jpg?raw=true"
@@ -42,7 +42,7 @@
         {
             "id": 3,
             "name": "potatoes",
-            "price": "70",
+            "price": 70,
             "description": "tasty",
             "author_id": 3,
             "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img4.jpg?raw=true"
@@ -50,7 +50,7 @@
         {
             "id": 4,
             "name": "apples",
-            "price": "50",
+            "price": 50,
             "description": "tasty",
             "author_id": 4,
             "img": "https://github.com/Sowwiezn/marketplace/blob/main/img/img7.jpg?raw=true"

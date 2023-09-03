@@ -51,7 +51,7 @@ function drawCartProducts(){
     let sum = 0;
     cart.forEach(function(p){
              cartProduct.innerHTML += `
-             <p><img src="${p.img}"> ${p.name} |${p.price}$</p>
+             <p><img src="${p.img}"> ${p.name} | ${p.price}$</p>
              <hr>
             `
         sum += p.price;
